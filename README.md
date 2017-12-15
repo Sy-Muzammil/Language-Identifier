@@ -4,7 +4,7 @@ This is a trained Neural Net model for a Telegu Language code mixed with English
 # Results:
       |       precision |  recall |   f1-score  |  support
  
- -----|----------------------------------------------
+ -----|-----------------|---------|-------------|-------
  
  eng  |          0.95   |   0.91   |     0.93    | 327
  
@@ -14,7 +14,7 @@ This is a trained Neural Net model for a Telegu Language code mixed with English
   
 univ  |          0.98   |   0.96   |     0.97    | 98
 
-------|---------------------------------------------
+------|-----------------|-----------|--------------|---
 
 avg/total  |     0.89   |   0.89   |     0.88    | 727
 
