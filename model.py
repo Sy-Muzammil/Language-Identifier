@@ -162,41 +162,26 @@ class Build_W2V:
             for (x,y,z) in zip(sent[0:-1],sent[1:-1],sent[2:]):
                 self.trigrams_tags.append([x,y,z])
 
-
-
-        # print trigrams_words
-        # print "-------------------------------------------------------------------------------"
-        # print trigrams_tags
-        # print "-------------------------------------------------------------------------------"
         self.use_embedding()
 
     def use_embedding(self):
 
-        #print self.trigrams_words
-        #print "-------------------------------"
-        #print self.trigrams_tags
-
         wrd = self.trigrams_words
         tg = self.trigrams_tags
-        #print wrd
-        #print tg
-
-        # for i in self.trigrams_words:
-        #   print i
+        
         self.wordvec = []
         self.lisvec = []
 
         for i in range(len(wrd)):
             tempvec =[]
-            #tempvec =np.array([])
-            #print ("1: ",self.wordvec.shape)
+        
             for j in range(len(wrd[i])):
                 if wrd[i][j] in model:
                     tempvec.extend(model[wrd[i][j]])
                 else:
                     tempvec.extend(dummy)
 
-            #print("t: ",len(tempvec))
+        
             if en.check(wrd[i][1].lower()):
                 tempvec.extend(lo)
             else:
@@ -238,8 +223,7 @@ class Build_W2V:
                 tempvec.extend(nu)
             else:
                 tempvec.extend(oth)
-            #print "-----------"
-            #print tempvec
+            
             print("to: ",len(tempvec))
             tempvec = np.array(tempvec)
 
