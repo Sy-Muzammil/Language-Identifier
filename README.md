@@ -1,6 +1,6 @@
 # Language-Identifier
 Language identification of code mixed data.
-This is a trained Neural Net model for a Telegu Language code mixed with English language
+This is a trained Neural Net model for a Telugu Language code mixed with English language
 # Results:
 Labels | #precision |  #recall  | #f1-score | #support 
 --- | --- | --- | --- |--- 
